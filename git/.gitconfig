@@ -14,7 +14,8 @@
     ui = true
 [alias]
     s = status
-    m = merge --no-ff
+    st = status
+    mg = merge --no-ff
     mf = merge --ff
     ms = merge --squash
     ck = checkout
