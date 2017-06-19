@@ -7,6 +7,7 @@
     safecrlf = true
     filemode = false
     editor = vim
+
 [color]
     ui = auto
 
@@ -31,8 +32,6 @@
 
 [push]
     default = current
-
-
 
 [alias]
     s = status
@@ -61,6 +60,7 @@
     filesEncoding = utf-8
 
 
+
 # ━━━━━━神兽出没━━━━━━
 #  ┏┓　　　┏┓
 #┏┛┻━━━┛┻┓
@@ -81,9 +81,4 @@
 #　　　┗┻┛　┗┻┛
 #━━━━━━感觉萌萌哒━━━━━━
 #
-
-
-
-
-
 
