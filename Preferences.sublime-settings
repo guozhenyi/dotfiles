@@ -15,7 +15,7 @@
     "save_on_focus_lost": true, // 在失去焦点的时候保存文件
     "show_encoding": true, // 显示文件编码
     "show_line_endings": true, // 在状态栏显示行结束符
-    "tab_size": 4, // tab键为4个字符宽度
+    "tab_size": 2, // tab键为4个字符宽度
     "translate_tabs_to_spaces": true, // 把所有的tab转换成空格
     "trim_trailing_white_space_on_save":false, // 在保存的时候，删除尾部的空白字符
     "update_check": false, // 不检查新版本
