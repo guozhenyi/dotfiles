@@ -1,10 +1,11 @@
 {
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_with_fields": true,
+    "auto_complete": true, // 是否开启sublime的自动补全
+    "auto_complete_commit_on_tab": true, // 按tab键自动补全上屏，false时按Enter就上屏
+    "auto_complete_with_fields": true, // auto_complete_commit_on_tab为true时，控制代码提示的活跃度
     "bold_folder_labels": true, // 加粗侧栏上端显示打开的文件
     "default_line_ending": "unix", // 默认的换行符unix类型
     "draw_white_space": "all", // 显示所有的空白字符
-    "ensure_newline_at_eof_on_save": true, // 在保存的时候，确保在结尾有一个新行
+    "ensure_newline_at_eof_on_save": false, // 在保存的时候，确保在结尾有一个新行
     "font_size": 14, // 字体大小
     "highlight_line": true, // 高亮显示当前行
     "highlight_modified_tabs": true, // 突出显示修改过的标签
@@ -19,6 +20,6 @@
     "translate_tabs_to_spaces": true, // 把所有的tab转换成空格
     "trim_trailing_white_space_on_save":false, // 在保存的时候，删除尾部的空白字符
     "update_check": false, // 不检查新版本
-    "word_wrap": true // 文本换行
+    "word_wrap": false // 文本换行
 }
 
