@@ -45,6 +45,7 @@
     cm = commit
     br = branch
     pl = pull
+    plr = pull --rebase
     ps = push
     unstage = reset HEAD
     last = log -1
