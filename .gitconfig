@@ -40,6 +40,7 @@
     mg = merge --no-ff
     mf = merge --ff
     ms = merge --squash
+    rb = rebase
     ck = checkout
     co = checkout
     cm = commit
