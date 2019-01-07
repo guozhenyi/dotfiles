@@ -19,7 +19,7 @@ lang mes en_US.utf-8   "zh_CN.utf-8
 colorscheme desert
 colo peachpuff
 set autoindent
-set nu
+"set nu
 
 
 "用空格键来开关折叠（说明西方"后面的内容为注释，不会被VIM所识别）
