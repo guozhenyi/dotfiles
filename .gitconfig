@@ -1,45 +1,21 @@
 [user]
-    name = guozhenyi
-    email = JerryDev@163.com
-
+    name = gzy
+    email = gzyonline@hotmail.com
 [core]
     autocrlf = false
     safecrlf = true
     filemode = false
-    editor = vim
-
 [color]
     ui = auto
-
-[diff]
-    tool = vimdiff
-    algorithm = patience
-    mnemonicPrefix = true
-    compactionHeuristic = true
-
-[merge]
-    tool = vimdiff
-    conflictstyle = diff3
-
-[mergetool "vim-merge3way"]
-    cmd = "vim -c \"call mergeutil#threeway()\" \"$BASE\" \"$REMOTE\" \"$LOCAL\" \"$MERGED\""
-    trustExitCode = true
-
-[filter "lfs"]
-    clean = git lfs clean %f
-    smudge = git lfs smudge %f
-    required = true
-
 [push]
     default = current
-
 [alias]
     s = status
     st = status
     df = diff
     mg = merge --no-ff
-    mf = merge --ff
-    ms = merge --squash
+    mgf = merge --ff
+    mgs = merge --squash
     rb = rebase
     ck = checkout
     co = checkout
@@ -50,18 +26,30 @@
     ps = push
     rmbr = fetch -p
     unstage = reset HEAD
+    # remove a file from index
+    unadd = reset HEAD
     last = log -1
     logf = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     log1 = log --pretty=oneline --abbrev-commit --graph --decorat
-    # remove a file from index
-    unadd = reset HEAD
-
 [gui]
     encoding = utf-8
-
 [i18n]
     filesEncoding = utf-8
-
+[diff]
+    tool = vimdiff
+    algorithm = patience
+    mnemonicPrefix = true
+    compactionHeuristic = true
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool "vim-merge3way"]
+    cmd = "vim -c \"call mergeutil#threeway()\" \"$BASE\" \"$REMOTE\" \"$LOCAL\" \"$MERGED\""
+    trustExitCode = true
+[filter "lfs"]
+    clean = git lfs clean %f
+    smudge = git lfs smudge %f
+    required = true
 
 
 # ━━━━━━神兽出没━━━━━━
@@ -84,4 +72,3 @@
 #　　　┗┻┛　┗┻┛
 #━━━━━━感觉萌萌哒━━━━━━
 #
-
