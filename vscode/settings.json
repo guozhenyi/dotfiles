@@ -1,0 +1,48 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "boundary",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.rulers": [120],
+
+    "git.path": "D:\\devtools\\Git\\bin\\git.exe",
+
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "manual",
+
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "files.eol": "\n",
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.idea": true
+    },
+
+    // 在函数名后面加上括号，类似这种形式 foo () {}
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+
+    // 指定 *.js 文件的格式化工具为vscode自带
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+
+    // 将vetur的js格式化工具指定为vscode自带的
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    // 指定 *.vue 文件的格式化工具为vetur
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+
+    "eslint.run": "onSave",
+    "eslint.packageManager": "yarn",
+    "eslint.codeActionsOnSave.mode": "problems",
+
+    "workbench.startupEditor": "newUntitledFile",
+    "window.titleBarStyle": "native",
+    "window.newWindowDimensions": "inherit",
+
+}
