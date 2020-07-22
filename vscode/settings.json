@@ -1,25 +1,56 @@
 {
-    "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "material-icon-theme",
 
     "editor.fontSize": 16,
+
+    // 控制是否在打开文件时，基于文件内容自动检测 `editor.tabSize#` 和 `#editor.insertSpaces`。
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    // "editor.insertSpaces": true,
+
+    // 呈现空格字符(字词之间的单个空格除外)
     "editor.renderWhitespace": "boundary",
-    "editor.multiCursorModifier": "ctrlCmd",
+    // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
     "editor.rulers": [120],
 
-    "git.path": "D:\\devtools\\Git\\bin\\git.exe",
-
-    "update.enableWindowsBackgroundUpdates": false,
-    "update.mode": "manual",
-
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-
+    // 默认行尾字符。
     "files.eol": "\n",
+    // 当编辑器失去焦点时，将自动保存。
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.idea": true
     },
+
+    // 启用后，将在保存文件时删除文件末尾的空格。
+    "files.trimTrailingWhitespace": true,
+
+    // 启用后，差异编辑器将忽略前导空格或尾随空格中的更改。
+    // "diffEditor.ignoreTrimWhitespace": true,
+
+    "git.path": "D:\\devtools\\Git\\bin\\git.exe",
+
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+
+    "update.mode": "manual",
+    "update.enableWindowsBackgroundUpdates": false,
+
+    // 将使用数据和错误发送到 Microsoft 联机服务。
+    "telemetry.enableTelemetry": false,
+    // 将崩溃报告发送到 Microsoft 联机服务。
+    "telemetry.enableCrashReporter": false,
+    // 从 Microsoft 联机服务中获取要进行的实验。
+    "workbench.enableExperiments": false,
+
+    "eslint.run": "onSave",
+    "eslint.packageManager": "yarn",
+    "eslint.codeActionsOnSave.mode": "problems",
+
+    // "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "window.titleBarStyle": "native",
+    "window.newWindowDimensions": "inherit",
 
     // 在函数名后面加上括号，类似这种形式 foo () {}
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -31,18 +62,13 @@
 
     // 将vetur的js格式化工具指定为vscode自带的
     "vetur.format.defaultFormatter.js": "vscode-typescript",
+
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
     },
-    "diffEditor.ignoreTrimWhitespace": true,
 
-    "eslint.run": "onSave",
-    "eslint.packageManager": "yarn",
-    "eslint.codeActionsOnSave.mode": "problems",
 
-    "workbench.startupEditor": "newUntitledFile",
-    "window.titleBarStyle": "native",
-    "window.newWindowDimensions": "inherit",
+
 
 }
