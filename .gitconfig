@@ -19,6 +19,7 @@
     rb = rebase
     ck = checkout
     co = checkout
+    cko = checkout --orphan
     cm = commit
     br = branch
     pl = pull
