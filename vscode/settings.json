@@ -45,7 +45,7 @@
     // 将崩溃报告发送到 Microsoft 联机服务。
     "telemetry.enableCrashReporter": false,
     // 从 Microsoft 联机服务中获取要进行的实验。
-    "workbench.enableExperiments": false,
+    // "workbench.enableExperiments": false,
 
     "eslint.run": "onSave",
     "eslint.packageManager": "yarn",
@@ -61,20 +61,16 @@
     // 在函数名后面加上括号，类似这种形式 foo () {}
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
 
+    // 将vetur的js格式化工具指定为vscode自带的
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+
     // 指定 *.js 文件的格式化工具为vscode自带
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-
-    // 将vetur的js格式化工具指定为vscode自带的
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
     },
-
-
-
 
 }
