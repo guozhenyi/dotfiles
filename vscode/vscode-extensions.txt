@@ -15,24 +15,22 @@ Vetur
 vue-helper
 
 
-Babel-JavaScript
+Prettier - Code formatter
+-- Code formatter using prettier
 
+Babel-JavaScript
 -- JavaScript syntax hightlighting for ES201x,React JSX, Flow and GraphQL
 
 HTML Snippets
-
 -- Full HTML tags including HTML5 Snippets
 
 HTML CSS Support
-
 -- Missing CSS support for HTML documents.
 
 JavaScript(ES6) code snippets
-
 -- Code snippets for JavaScript in Es6 syntax
 
 Reactjs code snippets
-
 -- Code snippets for Reactjs development in ES6 syntax
 
 
