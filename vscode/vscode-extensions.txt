@@ -1,18 +1,18 @@
 
-Bracket Pair Colorizer 2
+## Bracket Pair Colorizer 2
 
 
-Chinese (Simplified) Language Pack for Visual Studio Code
+## Chinese (Simplified) Language Pack for Visual Studio Code
 
-CSS Formatter
+## CSS Formatter
 
-ESLint
+## ESLint
 
-Material Icon Theme
+## Material Icon Theme
 
-Vetur
+## Vetur
 
-vue-helper
+## vue-helper
 
 
 Prettier - Code formatter
