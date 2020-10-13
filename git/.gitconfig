@@ -5,6 +5,7 @@
     autocrlf = false
     safecrlf = true
     filemode = false
+    quotepath = false
 [color]
     ui = auto
 [push]
