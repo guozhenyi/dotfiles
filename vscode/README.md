@@ -1,3 +1,8 @@
+## vscode extensions
+
+### Autoprefixer
+
+Parse CSS and add vendor prefixes automatically.
 
 ### Babel-JavaScript
 
@@ -6,6 +11,10 @@ JavaScript syntax hightlighting for ES201x,React JSX, Flow and GraphQL
 ### Beautify
 
 Beautify code in place for VS Code
+
+### Easy LESS
+
+Auto-compile LESS to CSS on save
 
 ### ESLint
 

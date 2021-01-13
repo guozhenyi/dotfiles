@@ -1,6 +1,7 @@
 {
 
     "editor.fontSize": 16,
+    "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
 
     // 控制是否在打开文件时，基于文件内容自动检测 `editor.tabSize#` 和 `#editor.insertSpaces`。
     "editor.detectIndentation": false,
@@ -71,6 +72,20 @@
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
+    },
+
+    "less.lint.important": "warning",
+    "[less]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
     },
 
 }
