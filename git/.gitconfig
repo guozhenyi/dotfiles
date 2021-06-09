@@ -6,6 +6,7 @@
     safecrlf = true
     filemode = false
     quotepath = false
+    excludesfile = ~/.gitignore
 [color]
     ui = auto
 [push]
