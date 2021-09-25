@@ -1,41 +1,71 @@
 "
 " author:  guozhenyi
-" version: 0.1
+" version: 0.2
 " create at: 2019-01-07
 "
 
+syntax on              "语法高亮
+filetype on            "文件类型
+colorscheme desert     "配色方案[desert|torte|...]
+
 "win
 winpos 520 220   "left top
-set lines=30 columns=120
+set lines=36 columns=120
 
-" base
+"base 关闭vi兼容模式 [compatible|nocompatible]
 set nocompatible
 
+"设置编码和字体
 set encoding=utf-8
+"set fileencoding=utf-8
+set fileencodings=utf-8,gbk,big5,chinese,latin-1
+set guifont=Source_Code_Pro:h14,Consolas:h14,monospace:h14
+
+"解决consle提示信息输出乱码
+"lang mes en_US.utf-8   "zh_CN.utf-8
+language messages zh_CN.utf-8
+
 set langmenu=en_US.utf-8  "zh_CN.utf-8
-lang mes en_US.utf-8   "zh_CN.utf-8
+
+set number          "显示行号
+set nowrap          "不换行
+set smartindent     "自动缩进[autoindent|smartindent|cindent]
+
+"set tabstop=8      "tab显示宽度(默认8个字符，建议保持默认值)
+set shiftwidth=2    "自动缩进字符数
+set expandtab       "输入Tab字符时,自动替换成空格
+set softtabstop=-1  "插入模式按tab时的空格数(为负时和shiftwidth保持一致)
+
+"显示空白字符
+"set list
+"set listchars=tab:>~,space:.
 
 
-colorscheme desert
-colo peachpuff
-set autoindent
-"set nu
+"backspace键
+" indent 删除自动缩进的值
+" eol 删除上一行行末尾的回车，两行合并
+" start 除了刚输入的，还删除原来的字符
+"set backspace=indent,eol,start
+
+"set laststatus=2   "显示状态行
 
 
-"用空格键来开关折叠（说明西方"后面的内容为注释，不会被VIM所识别）
-set foldenable
-set foldmethod=indent
-nnoremap @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
+"colo peachpuff
+
+"用空格键来开关折叠
+"set foldenable
+"set foldmethod=indent
+"nnoremap @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
 
 
 "插件管理
-set rtp+=$VIM\vimfiles\bundle\Vundle.vim\
-call vundle#begin()
-"let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-"my bundle plugin
-call vundle#end()
-filetype plugin indent on
+"set rtp+=$VIM\vimfiles\bundle\Vundle.vim\
+"call vundle#begin()
+""let Vundle manage Vundle, required
+"Plugin 'VundleVim/Vundle.vim'
+""my bundle plugin
+"call vundle#end()
+"filetype plugin indent on
 
 "Toggle Menu and Toolbar
 set guioptions-=m  "remove menu bar
