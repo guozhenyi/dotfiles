@@ -9,8 +9,8 @@ filetype on            "文件类型
 colorscheme desert     "配色方案[desert|torte|...]
 
 "win
-winpos 520 220   "left top
-set lines=36 columns=120
+winpos 200 200   "left top
+set lines=30 columns=120
 
 "base 关闭vi兼容模式 [compatible|nocompatible]
 set nocompatible
@@ -19,7 +19,7 @@ set nocompatible
 set encoding=utf-8
 "set fileencoding=utf-8
 set fileencodings=utf-8,gbk,big5,chinese,latin-1
-set guifont=Source_Code_Pro:h14,Consolas:h14,monospace:h14
+set guifont=Source_Code_Pro:h12,Consolas:h12,monospace:h12
 
 "解决consle提示信息输出乱码
 "lang mes en_US.utf-8   "zh_CN.utf-8
