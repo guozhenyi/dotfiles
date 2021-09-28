@@ -14,6 +14,9 @@ set lines=30 columns=120
 
 "base 关闭vi兼容模式 [compatible|nocompatible]
 set nocompatible
+" indent 删除自动缩进的值 eol 删除上一行行末尾的回车，两行合并 start 除了刚输入的，还删除原来的字符
+set backspace=indent,eol,start
+
 
 "设置编码和字体
 set encoding=utf-8
@@ -40,12 +43,6 @@ set softtabstop=-1  "插入模式按tab时的空格数(为负时和shiftwidth保
 "set list
 "set listchars=tab:>~,space:.
 
-
-"backspace键
-" indent 删除自动缩进的值
-" eol 删除上一行行末尾的回车，两行合并
-" start 除了刚输入的，还删除原来的字符
-"set backspace=indent,eol,start
 
 "set laststatus=2   "显示状态行
 
