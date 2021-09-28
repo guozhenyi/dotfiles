@@ -30,6 +30,10 @@ language messages zh_CN.utf-8
 
 set langmenu=en_US.utf-8  "zh_CN.utf-8
 
+set cursorline              "高亮当前行
+set guicursor=n:blinkon0    "光标在常规模式不闪烁
+
+
 set number          "显示行号
 set nowrap          "不换行
 set smartindent     "自动缩进[autoindent|smartindent|cindent]
