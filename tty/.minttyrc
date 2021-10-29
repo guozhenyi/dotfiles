@@ -1,8 +1,8 @@
-BoldAsFont=no
-Columns=88
-Rows=24
 Font=Consolas
 FontHeight=14
+Rows=24
+Columns=88
+BoldAsFont=no
 Locale=zh_CN
 Charset=UTF-8
 Term=xterm-256color
