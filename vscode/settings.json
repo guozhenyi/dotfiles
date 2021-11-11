@@ -1,11 +1,10 @@
 {
-
     "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
 
     // 控制是否在打开文件时，基于文件内容自动检测 `editor.tabSize#` 和 `#editor.insertSpaces`。
-    "editor.detectIndentation": false,
-    "editor.tabSize": 4,
+    // "editor.detectIndentation": false,
+    "editor.tabSize": 2,
     // "editor.insertSpaces": true,
 
     // 呈现空格字符(字词之间的单个空格除外)
@@ -14,15 +13,17 @@
     "editor.rulers": [120],
 
     // 控制是否显示悬停提示。
-	"editor.hover.enabled": false,
+    // "editor.hover.enabled": false,
+    "editor.hover.delay": 2000,
+    "editor.quickSuggestionsDelay": 3000,
 
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
 
     // 默认行尾字符。
-    "files.eol": "\n",
+    // "files.eol": "\n",
     // 当编辑器失去焦点时，将自动保存。
-    "files.autoSave": "onFocusChange",
+    // "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.idea": true
     },
@@ -30,13 +31,16 @@
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
 
+    // 每行最大字符数(0 = 禁用)。
+    "html.format.wrapLineLength": 0,
+
     // 启用后，差异编辑器将忽略前导空格或尾随空格中的更改。
     // "diffEditor.ignoreTrimWhitespace": true,
 
-    "git.path": "D:\\devtools\\Git\\bin\\git.exe",
+    // "git.path": "D:\\devtools\\Git\\bin\\git.exe",
 
     "extensions.autoUpdate": false,
-    "extensions.autoCheckUpdates": false,
+    "extensions.autoCheckUpdates": true,
 
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
@@ -56,7 +60,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
 
-    "window.titleBarStyle": "native",
+    // "window.titleBarStyle": "native",
     "window.newWindowDimensions": "inherit",
 
     // 在函数名后面加上括号，类似这种形式 foo () {}
@@ -69,23 +73,97 @@
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    // 指定 *.vue 文件的格式化工具为vetur
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-
-    "less.lint.important": "warning",
-    "[less]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
+    "[less]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+
+    // 指定 *.vue 文件的格式化工具为vetur
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "octref.vetur"
+    },
+
+    "less.lint.important": "warning",
+    "prettier.printWidth": 500,
+
+
+    // 配置要为 [python] 语言替代的设置。
+    "[python]":  {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced"
+    },
+
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+
+    "settingsSync.ignoredSettings": [
+        "-git.path",
+        "-php.validate.executablePath"
+    ],
+
+
+    // "less.compile": {
+    //     "compress": false, // 是否压缩
+    //     "sourceMap": false, // 是否生成map文件，有了这个可以在调试台看到less行数
+    //     "main": [
+    //         // "index.less",
+    //         // "panel.less",
+    //     ],
+    //     // "out": true, // 是否输出css文件，false为不输出
+    //     "out": "../css/",
+    //     "outExt": ".css", // 输出文件的后缀,小程序可以写'wxss'
+    //     "autoprefixer": "> 1%, last 2 versions, not dead",
+    //     // "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9", // 自动加前缀
+    // },
+
+
+
+    // "vetur.format.defaultFormatterOptions": {
+    //     "prettier": {
+    //     "printWidth": 100
+    //     }
+    // },
+
+    // "vetur.format.defaultFormatter.html": "prettier",
+    // "vetur.format.defaultFormatterOptions": {
+    //     "js-beautify-html": {
+    //         "wrap_attributes": "force-expand-multiline"
+    //     },
+    //     "prettyhtml": {
+    //         "printWidth": 100,
+    //         "singleQuote": false,
+    //         "wrapAttributes": false,
+    //         "sortAttributes": false
+    //     }
+    // },
+    // "vetur.format.defaultFormatterOptions": {
+    //     "js-beautify-html": {
+    //         "wrap_attributes": "auto",
+    //     }
+    // },
+
+    // "eslint.validate": [
+    //     "javascript",
+    //     "javascriptreact",
+    //     "vue"
+    // ],
+    // "eslint.format.enable": true,
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // },
+    // "vetur.format.defaultFormatter.html": "prettyhtml",
+
+
+
 
 }
