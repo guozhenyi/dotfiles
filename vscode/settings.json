@@ -1,22 +1,13 @@
 {
     "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
-
-    // 控制是否在打开文件时，基于文件内容自动检测 `editor.tabSize#` 和 `#editor.insertSpaces`。
-    // "editor.detectIndentation": false,
     "editor.tabSize": 2,
-    // "editor.insertSpaces": true,
-
     // 呈现空格字符(字词之间的单个空格除外)
     "editor.renderWhitespace": "boundary",
     // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
-    "editor.rulers": [120],
-
-    // 控制是否显示悬停提示。
-    // "editor.hover.enabled": false,
+    "editor.rulers": [80,120],
+    // 控制显示悬停提示前的等待时间 (毫秒)。
     "editor.hover.delay": 2000,
-    // "editor.quickSuggestionsDelay": 3000,
-
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
 
@@ -49,8 +40,6 @@
     "telemetry.enableTelemetry": false,
     // 将崩溃报告发送到 Microsoft 联机服务。
     "telemetry.enableCrashReporter": false,
-    // 从 Microsoft 联机服务中获取要进行的实验。
-    // "workbench.enableExperiments": false,
 
     "eslint.run": "onSave",
     "eslint.packageManager": "yarn",
@@ -111,7 +100,6 @@
         "-php.validate.executablePath"
     ],
 
-
     // "less.compile": {
     //     "compress": false, // 是否压缩
     //     "sourceMap": false, // 是否生成map文件，有了这个可以在调试台看到less行数
@@ -162,8 +150,6 @@
     //     "source.fixAll.eslint": true
     // },
     // "vetur.format.defaultFormatter.html": "prettyhtml",
-
-
 
 
 }
