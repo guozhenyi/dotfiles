@@ -11,6 +11,9 @@
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
 
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": true,
+
     // 默认行尾字符。
     // "files.eol": "\n",
     // 当编辑器失去焦点时，将自动保存。
@@ -28,11 +31,6 @@
     // 启用后，差异编辑器将忽略前导空格或尾随空格中的更改。
     // "diffEditor.ignoreTrimWhitespace": true,
 
-    // "git.path": "D:\\devtools\\Git\\bin\\git.exe",
-
-    "extensions.autoUpdate": false,
-    "extensions.autoCheckUpdates": true,
-
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
 
@@ -40,10 +38,6 @@
     "telemetry.enableTelemetry": false,
     // 将崩溃报告发送到 Microsoft 联机服务。
     "telemetry.enableCrashReporter": false,
-
-    "eslint.run": "onSave",
-    "eslint.packageManager": "yarn",
-    "eslint.codeActionsOnSave.mode": "problems",
 
     // "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "newUntitledFile",
@@ -54,20 +48,27 @@
 
     // 在函数名后面加上括号，类似这种形式 foo () {}
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // 在保存运行代码检查
+    "eslint.run": "onSave",
+    "eslint.packageManager": "yarn",
+    "eslint.codeActionsOnSave.mode": "problems",
 
     // 将vetur的js格式化工具指定为vscode自带的
     "vetur.format.defaultFormatter.js": "vscode-typescript",
-
     // 指定 *.js 文件的格式化工具为vscode自带
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "vscode.typescript-language-features"
+    // },
+    // "[json]": {
+    //     "editor.defaultFormatter": "vscode.json-language-features"
+    // },
+    // "[html]": {
+    //     "editor.defaultFormatter": "vscode.html-language-features"
+    // },
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
@@ -84,16 +85,12 @@
     "less.lint.important": "warning",
     "prettier.printWidth": 500,
 
-
     // 配置要为 [python] 语言替代的设置。
     "[python]":  {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
         "editor.autoIndent": "advanced"
     },
-
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-
 
     "settingsSync.ignoredSettings": [
         "-git.path",
@@ -115,14 +112,8 @@
     // },
 
 
-
-    // "vetur.format.defaultFormatterOptions": {
-    //     "prettier": {
-    //     "printWidth": 100
-    //     }
-    // },
-
     // "vetur.format.defaultFormatter.html": "prettier",
+    // "vetur.format.defaultFormatter.html": "prettyhtml",
     // "vetur.format.defaultFormatterOptions": {
     //     "js-beautify-html": {
     //         "wrap_attributes": "force-expand-multiline"
@@ -133,23 +124,14 @@
     //         "wrapAttributes": false,
     //         "sortAttributes": false
     //     }
-    // },
-    // "vetur.format.defaultFormatterOptions": {
+    //     "prettier": {
+    //         "printWidth": 100
+    //     }
     //     "js-beautify-html": {
     //         "wrap_attributes": "auto",
     //     }
     // },
 
-    // "eslint.validate": [
-    //     "javascript",
-    //     "javascriptreact",
-    //     "vue"
-    // ],
-    // "eslint.format.enable": true,
-    // "editor.codeActionsOnSave": {
-    //     "source.fixAll.eslint": true
-    // },
-    // "vetur.format.defaultFormatter.html": "prettyhtml",
 
 
 }
