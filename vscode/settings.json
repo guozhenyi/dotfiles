@@ -35,6 +35,7 @@
     "update.enableWindowsBackgroundUpdates": false,
 
     // 将使用数据和错误发送到 Microsoft 联机服务。
+    "telemetry.telemetryLevel": "off",
     "telemetry.enableTelemetry": false,
     // 将崩溃报告发送到 Microsoft 联机服务。
     "telemetry.enableCrashReporter": false,
@@ -82,7 +83,7 @@
         "editor.defaultFormatter": "octref.vetur"
     },
 
-    "less.lint.important": "warning",
+    // "less.lint.important": "warning",
     "prettier.printWidth": 500,
 
     // 配置要为 [python] 语言替代的设置。
