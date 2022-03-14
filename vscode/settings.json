@@ -57,12 +57,6 @@
     "eslint.run": "onSave",
     "eslint.packageManager": "yarn",
     "eslint.codeActionsOnSave.mode": "problems",
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "html",
-        "vue"
-    ],
 
     // 将vetur的js格式化工具指定为vscode自带的
     "vetur.format.defaultFormatter.js": "vscode-typescript",
