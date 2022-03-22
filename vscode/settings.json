@@ -2,25 +2,17 @@
     "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
     "editor.tabSize": 2,
+    // 控制显示悬停提示前的等待时间 (毫秒)。
+    "editor.hover.delay": 2000,
     // 呈现空格字符(字词之间的单个空格除外)
     "editor.renderWhitespace": "boundary",
     // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
-    "editor.rulers": [80,120],
-    // 控制显示悬停提示前的等待时间 (毫秒)。
-    "editor.hover.delay": 2000,
+    "editor.rulers": [80, 120],
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
 
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": true,
-
-    // 默认行尾字符。
-    // "files.eol": "\n",
-    // 当编辑器失去焦点时，将自动保存。
-    // "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/.idea": true
-    },
 
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
@@ -28,69 +20,57 @@
     // 每行最大字符数(0 = 禁用)。
     "html.format.wrapLineLength": 0,
 
-    // 启用后，差异编辑器将忽略前导空格或尾随空格中的更改。
-    // "diffEditor.ignoreTrimWhitespace": true,
-
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
 
-    // 将使用数据和错误发送到 Microsoft 联机服务。
-    "telemetry.telemetryLevel": "off",
+    // 关闭遥测
+    "telemetry.telemetryLevel": "crash",
     "telemetry.enableTelemetry": false,
-    // 将崩溃报告发送到 Microsoft 联机服务。
     "telemetry.enableCrashReporter": false,
 
-    // "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
 
-    // "window.titleBarStyle": "native",
     "window.newWindowDimensions": "inherit",
 
-    // 在函数名后面加上括号，类似这种形式 foo () {}
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
     "security.workspace.trust.untrustedFiles": "open",
 
-    // 在保存运行代码检查
+    // 在保存时运行代码检查
     "eslint.run": "onSave",
     "eslint.packageManager": "yarn",
     "eslint.codeActionsOnSave.mode": "problems",
 
-    // 将vetur的js格式化工具指定为vscode自带的
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    // 指定 *.js 文件的格式化工具为vscode自带
-    // "[javascript]": {
-    //     "editor.defaultFormatter": "vscode.typescript-language-features"
-    // },
-    // "[json]": {
-    //     "editor.defaultFormatter": "vscode.json-language-features"
-    // },
-    // "[html]": {
-    //     "editor.defaultFormatter": "vscode.html-language-features"
-    // },
+    // "less.lint.important": "warning",
+    "prettier.printWidth": 200,
+
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "[html]": {
+        // vscode.html-language-features
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[json]": {
+        // vscode.json-language-features
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[css]": {
+        // vscode.css-language-features
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[less]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
 
+    // 将vetur的js格式化工具指定为vscode自带的
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "octref.vetur"
     },
-
-    // "less.lint.important": "warning",
-    "prettier.printWidth": 500,
 
     // 配置要为 [python] 语言替代的设置。
     "[python]":  {
@@ -116,27 +96,6 @@
     //     "outExt": ".css", // 输出文件的后缀,小程序可以写'wxss'
     //     "autoprefixer": "> 1%, last 2 versions, not dead",
     //     // "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9", // 自动加前缀
-    // },
-
-
-    // "vetur.format.defaultFormatter.html": "prettier",
-    // "vetur.format.defaultFormatter.html": "prettyhtml",
-    // "vetur.format.defaultFormatterOptions": {
-    //     "js-beautify-html": {
-    //         "wrap_attributes": "force-expand-multiline"
-    //     },
-    //     "prettyhtml": {
-    //         "printWidth": 100,
-    //         "singleQuote": false,
-    //         "wrapAttributes": false,
-    //         "sortAttributes": false
-    //     }
-    //     "prettier": {
-    //         "printWidth": 100
-    //     }
-    //     "js-beautify-html": {
-    //         "wrap_attributes": "auto",
-    //     }
     // },
 
 
