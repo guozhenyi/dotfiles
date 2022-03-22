@@ -1,6 +1,17 @@
-# phpstorm
-/.idea
+# nodejs
+dist/
+node_modules/
 
 # vscode
-/.vscode
+.vscode/
+
+# php
+.env
+vendor/
+_ide_helper.php
+.phpstorm.meta.php
+phpunit-dev.xml
+
+# phpstorm
+.idea/
 
