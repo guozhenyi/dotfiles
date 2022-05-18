@@ -21,14 +21,20 @@ set backspace=indent,eol,start
 "设置编码和字体
 set encoding=utf-8
 "set fileencoding=utf-8
-set fileencodings=utf-8,gbk,big5,chinese,latin-1
+set fileencodings=utf-8,gbk,big5,gb18030,gb2312,chinese,latin-1
 set guifont=Source_Code_Pro:h12,Consolas:h12,monospace:h12
+
+set langmenu=zh_CN.utf-8  "zh_CN.utf-8 en_US.utf-8
+
+"解决菜单栏乱码
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
 
 "解决consle提示信息输出乱码
 "lang mes en_US.utf-8   "zh_CN.utf-8
 language messages zh_CN.utf-8
 
-set langmenu=en_US.utf-8  "zh_CN.utf-8
+
 
 set cursorline              "高亮当前行
 set guicursor=n:blinkon0    "光标在常规模式不闪烁
