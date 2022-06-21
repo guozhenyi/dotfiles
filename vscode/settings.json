@@ -17,8 +17,12 @@
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
 
+    // （设置这些属性，以和Perttier尽量保持格式兼容）
     // 每行最大字符数(0 = 禁用)。
-    "html.format.wrapLineLength": 0,
+    "html.format.wrapLineLength": 160,
+    "html.format.indentInnerHtml": true,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.extraLiners": "",
 
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
@@ -43,29 +47,29 @@
     "eslint.codeActionsOnSave.mode": "problems",
 
     // "less.lint.important": "warning",
-    "prettier.printWidth": 200,
+    "prettier.printWidth": 160,
+    "prettier.singleQuote": true,
 
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[html]": {
-        // vscode.html-language-features
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
-        // vscode.json-language-features
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[css]": {
-        // vscode.css-language-features
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
     "[less]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "files.insertFinalNewline": false,
+        "files.trimTrailingWhitespace": false
     },
 
-    // 将vetur的js格式化工具指定为vscode自带的
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.tabSize": 2,
