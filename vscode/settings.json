@@ -17,20 +17,13 @@
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
 
-    // （设置这些属性，以和Perttier尽量保持格式兼容）
-    // 每行最大字符数(0 = 禁用)。
-    "html.format.wrapLineLength": 160,
-    "html.format.indentInnerHtml": true,
-    "html.format.wrapAttributes": "preserve",
-    "html.format.extraLiners": "",
-
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
 
     // 关闭遥测
-    "telemetry.telemetryLevel": "crash",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
+    // "telemetry.enableTelemetry": false,
+    // "telemetry.enableCrashReporter": false,
 
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
@@ -46,8 +39,15 @@
     "eslint.packageManager": "yarn",
     "eslint.codeActionsOnSave.mode": "problems",
 
+    // （设置这些属性，以和Perttier尽量保持格式兼容）
+    // 每行最大字符数(0 = 禁用)。
+    "html.format.wrapLineLength": 130,
+    "html.format.indentInnerHtml": false,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.extraLiners": "",
+
     // "less.lint.important": "warning",
-    "prettier.printWidth": 160,
+    "prettier.printWidth": 130,
     "prettier.singleQuote": true,
 
     "[javascript]": {
@@ -57,10 +57,10 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -73,7 +73,7 @@
     // 指定 *.vue 文件的格式化工具为vetur
     "[vue]": {
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "octref.vetur"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // 配置要为 [python] 语言替代的设置。
