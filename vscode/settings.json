@@ -16,6 +16,7 @@
 
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
 
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
@@ -50,36 +51,28 @@
     "prettier.printWidth": 130,
     "prettier.singleQuote": true,
 
+    "vue.inlayHints.optionsWrapper": false,
+
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[markdown]": {
         "files.insertFinalNewline": false,
         "files.trimTrailingWhitespace": false
     },
 
-    // 指定 *.vue 文件的格式化工具为vetur
+    // 指定 vue 文件的格式化工具
     "[vue]": {
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "Vue.volar"
     },
 
     // 配置要为 [python] 语言替代的设置。
     "[python]":  {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2,
         "editor.autoIndent": "advanced"
     },
 
