@@ -1,38 +1,38 @@
 "
 " author:  guozhenyi
-" version: 0.2
-" create at: 2019-01-07
+" version: 0.3
+" created at: 2019-01-07
+" updated at: 2023-07-13
 "
 
-syntax on              "语法高亮
-filetype on            "文件类型
-colorscheme desert     "配色方案[desert|torte|...]
+syntax on                 " 语法高亮
+filetype on               " 文件类型
+colorscheme desert        " 配色方案[desert|torte|...]
 
-"win
-winpos 200 200   "left top
+" win
+winpos 200 200            " left top
 set lines=30 columns=120
 
-"base 关闭vi兼容模式 [compatible|nocompatible]
-set nocompatible
+" base
+set nocompatible          " 关闭vi兼容模式 [compatible|nocompatible]
 " indent 删除自动缩进的值 eol 删除上一行行末尾的回车，两行合并 start 除了刚输入的，还删除原来的字符
 set backspace=indent,eol,start
 
-"搜索词高亮
-set hlsearch
+set hlsearch              " 搜索词高亮
 
-"设置编码和字体
+" 设置编码和字体
 set encoding=utf-8
 "set fileencoding=utf-8
 set fileencodings=utf-8,gbk,big5,gb18030,gb2312,chinese,latin-1
 set guifont=Source_Code_Pro:h12,Consolas:h12,monospace:h12
 
-set langmenu=zh_CN.utf-8  "zh_CN.utf-8 en_US.utf-8
+set langmenu=zh_CN.utf-8  " zh_CN.utf-8 en_US.utf-8
 
-"解决菜单栏乱码
+" 解决菜单栏乱码
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
-"解决consle提示信息输出乱码
+" 解决consle提示信息输出乱码
 "lang mes en_US.utf-8   "zh_CN.utf-8
 language messages zh_CN.utf-8
 
@@ -42,32 +42,30 @@ set cursorline              "高亮当前行
 set guicursor=n:blinkon0    "光标在常规模式不闪烁
 
 
-set number          "显示行号
-set nowrap          "不换行
-set smartindent     "自动缩进[autoindent|smartindent|cindent]
+set number                  "显示行号
+set nowrap                  "不换行
+set smartindent             "自动缩进[autoindent|smartindent|cindent]
 
-"set tabstop=8      "tab显示宽度(默认8个字符，建议保持默认值)
-set shiftwidth=2    "自动缩进字符数
-set expandtab       "输入Tab字符时,自动替换成空格
-set softtabstop=-1  "插入模式按tab时的空格数(为负时和shiftwidth保持一致)
+"set tabstop=8              "tab显示宽度(默认8个字符，建议保持默认值)
+set shiftwidth=2            "自动缩进字符数
+set softtabstop=-1          "插入模式按tab时的空格数(为负时和shiftwidth保持一致)
+set expandtab               "输入Tab字符时,自动替换成空格
 
-"显示空白字符
+"set laststatus=2           " 显示状态行
+
+" 显示空白字符
 "set list
 "set listchars=tab:>~,space:.
 
-
-"set laststatus=2   "显示状态行
-
-
 "colo peachpuff
 
-"用空格键来开关折叠
+" 用空格键来开关折叠
 "set foldenable
 "set foldmethod=indent
 "nnoremap @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
 
 
-"插件管理
+" 插件管理
 "set rtp+=$VIM\vimfiles\bundle\Vundle.vim\
 "call vundle#begin()
 ""let Vundle manage Vundle, required
@@ -76,7 +74,7 @@ set softtabstop=-1  "插入模式按tab时的空格数(为负时和shiftwidth保
 "call vundle#end()
 "filetype plugin indent on
 
-"Toggle Menu and Toolbar
+" Toggle Menu and Toolbar
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
