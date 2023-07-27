@@ -22,10 +22,6 @@ set nocompatible            " 关闭vi兼容模式 [compatible|nocompatible]
 " indent 删除自动缩进的值 eol 删除上一行行末尾的回车，两行合并 start 除了刚输入的，还删除原来的字符
 set backspace=indent,eol,start
 
-"set showmode               " 在底部状态栏显示当前模式
-"set showcmd                " 在命令模式下显示当前命令
-"set laststatus=2           " 显示状态行
-
 set cursorline              " 高亮当前行
 set guicursor=n:blinkon0    " 光标在常规模式不闪烁
 
@@ -52,6 +48,10 @@ source $VIMRUNTIME/menu.vim
 
 " 解决 consle 提示信息输出乱码 en_US.utf-8 zh_CN.utf-8
 language messages zh_CN.utf-8
+
+"set showmode               " 在底部状态栏显示当前模式
+"set showcmd                " 在命令模式下显示当前命令
+"set laststatus=2           " 显示状态行
 
 " 显示空白字符
 "set list
@@ -104,6 +104,9 @@ set wildmenu
 " n 表示normal mode；nore 表示 no recursive；map 添加映射
 " 向后退格快捷键
 "nnoremap <S-tab> <S-\<>
+
+" 以sudo权限写入文件
+cab w!! write !sudo tee % >/dev/null
 
 " =======================================
 " 切换菜单和工具栏
