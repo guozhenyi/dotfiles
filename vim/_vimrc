@@ -13,12 +13,18 @@ colorscheme desert        " 配色方案[desert|torte|...]
 winpos 200 200            " left top
 set lines=30 columns=120
 
-" base
-set nocompatible          " 关闭vi兼容模式 [compatible|nocompatible]
+" =======================================
+" 基础配置
+" =======================================
+
+set nocompatible            " 关闭vi兼容模式 [compatible|nocompatible]
+
 " indent 删除自动缩进的值 eol 删除上一行行末尾的回车，两行合并 start 除了刚输入的，还删除原来的字符
 set backspace=indent,eol,start
 
-set hlsearch                " 搜索词高亮
+"set showmode               " 在底部状态栏显示当前模式
+"set showcmd                " 在命令模式下显示当前命令
+"set laststatus=2           " 显示状态行
 
 set cursorline              " 高亮当前行
 set guicursor=n:blinkon0    " 光标在常规模式不闪烁
@@ -44,11 +50,8 @@ set langmenu=zh_CN.utf-8    " zh_CN.utf-8 en_US.utf-8
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
-" 解决consle提示信息输出乱码
-"lang mes en_US.utf-8   "zh_CN.utf-8
+" 解决 consle 提示信息输出乱码 en_US.utf-8 zh_CN.utf-8
 language messages zh_CN.utf-8
-
-"set laststatus=2           " 显示状态行
 
 " 显示空白字符
 "set list
@@ -61,12 +64,51 @@ language messages zh_CN.utf-8
 "set foldmethod=indent
 "nnoremap @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')
 
+" =======================================
+" 搜索相关配置
+" =======================================
+
+" 光标遇到{[()]}时，会高亮显示另一半匹配的符号
+set showmatch
+
+" 搜索词高亮
+set hlsearch
+
+" 搜索时忽略大小写
+set ignorecase
+set smartcase
+
+" =======================================
+" 编辑相关配置
+" =======================================
+
+" 自动切换工作目录
+"set autochdir
+
+" 出错时，不要发出响声
+set noerrorbells
+
+" 出错时，发出视觉提示，通常是屏幕闪烁
+set visualbell
+
+" 打开文件监视。文件在外部发生改变时，发出提示
+set autoread
+
+" 命令模式下，底部操作指令按下 Tab 自动补全
+set wildmenu
+
+" =======================================
 " 快捷键映射
+" =======================================
+
 " n 表示normal mode；nore 表示 no recursive；map 添加映射
 " 向后退格快捷键
 "nnoremap <S-tab> <S-\<>
 
-" Toggle Menu and Toolbar
+" =======================================
+" 切换菜单和工具栏
+" =======================================
+
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
@@ -79,7 +121,10 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions+=m <Bar>
     \endif<CR>
 
+" =======================================
 " 插件管理
+" =======================================
+
 "set rtp+=$VIM\vimfiles\bundle\Vundle.vim\
 "call vundle#begin()
 ""let Vundle manage Vundle, required
