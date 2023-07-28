@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Web developer",
+    "includes": [
+      {"ms-ceintl.vscode-language-pack-zh-hans": "Chinese(Simplified)"},
+      {"dbaeumer.vscode-eslint": "ESLint"},
+      {"ecmel.vscode-html-css": "HTML CSS Support"},
+      {"xabikos.javascriptsnippets": "JavaScript(ES6) code snippets"},
+      {"pkief.material-icon-theme": "Material Icon Theme"},
+      {"esbenp.prettier-vscode": "Prettier - Code formatter"},
+      {"hollowtree.vue-snippets": "Vue 3 Snippets"},
+      {"vue.volar": "Vue Language Features(Volar)"},
+      {"ritwickdey.liveserver": "Live Server", "optional": true},
+      {"ms-vscode.live-server": "Live Preview", "optional": true}
+    ]
+  },
+  {
+    "name": "Golang developer",
+    "includes":[
+      {"golang.go": "Go"}
+    ]
+  },
+  {
+    "name": "C/C++ developer",
+    "includes": [
+      {"ms-vscode.cpptools-extension-pack": "C/C++ Extension Pack"},
+      {"ms-vscode.cmake-tools": "CMake Tools"},
+      {"llvm-vs-code-extensions.vscode-clangd": "clangd"},
+      {"ms-vscode.makefile-tools": "Makefile Tools"},
+      {"tboox.xmake-vscode": "XMake"}
+    ]
+  },
+  {
+    "name": "Python developer",
+    "includes":[
+       {"ms-python.python": "Python"}
+    ]
+  },
+  {
+    "name": "Java developer",
+    "includes":[
+       {"vscjava.vscode-java-pack": "Extension Pack for Java"}
+    ]
+  }
+]

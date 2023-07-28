@@ -42,7 +42,7 @@
 
     // （设置这些属性，以和Perttier尽量保持格式兼容）
     // 每行最大字符数(0 = 禁用)。
-    "html.format.wrapLineLength": 130,
+    // "html.format.wrapLineLength": 130,
     "html.format.indentInnerHtml": false,
     "html.format.wrapAttributes": "preserve",
     "html.format.extraLiners": "",
@@ -58,6 +58,9 @@
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
         "files.insertFinalNewline": false,
@@ -76,10 +79,38 @@
         "editor.autoIndent": "advanced"
     },
 
+    "[go]":  {
+        // "editor.insertSpaces": false,
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": false
+        }
+    },
+
+    // "workbench.colorTheme": "Default Light+",
+
     "settingsSync.ignoredSettings": [
         "-git.path",
         "-php.validate.executablePath"
     ],
+
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
+
+    "svelte.plugin.svelte.note-new-transformation": false,
+
+    "java.home": "C:\\Java\\jdk1.8.0_112",
+    "java.jdt.ls.java.home": "C:\\Java\\jdk1.8.0_112",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:\\Java\\jdk1.8.0_112",
+            "default": true
+        }
+    ],
+    "java.requirements.JDK11Warning": false,
+
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
 
     // "less.compile": {
     //     "compress": false, // 是否压缩
