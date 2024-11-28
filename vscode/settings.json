@@ -8,6 +8,10 @@
     "editor.renderWhitespace": "boundary",
     // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
     "editor.rulers": [80, 120],
+    // 在编辑器中关闭内联提示。
+    "editor.inlayHints.enabled": "off",
+    // 粘滞滚动
+    "editor.stickyScroll.enabled": false,
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
 
@@ -28,8 +32,11 @@
 
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Default Dark+",
 
     "window.newWindowDimensions": "inherit",
+    "window.commandCenter": false,
 
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
@@ -59,12 +66,21 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
         "files.insertFinalNewline": false,
         "files.trimTrailingWhitespace": false
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
 
     // 指定 vue 文件的格式化工具
@@ -75,6 +91,7 @@
 
     // 配置要为 [python] 语言替代的设置。
     "[python]":  {
+        "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.autoIndent": "advanced"
     },
@@ -83,11 +100,11 @@
         // "editor.insertSpaces": false,
         "editor.formatOnSave": false,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": false
-        }
+          "source.organizeImports": "never"
+      }
     },
 
-    // "workbench.colorTheme": "Default Light+",
+    "code-runner.runInTerminal": true,
 
     "settingsSync.ignoredSettings": [
         "-git.path",
@@ -99,7 +116,8 @@
     "svelte.plugin.svelte.note-new-transformation": false,
 
     "java.home": "C:\\Java\\jdk1.8.0_112",
-    "java.jdt.ls.java.home": "C:\\Java\\jdk1.8.0_112",
+    "java.jdt.ls.java.home": "c:\\Java\\jdk1.8.0_112",
+    "java.configuration.detectJdksAtStart": false,
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-1.8",
@@ -111,6 +129,17 @@
 
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+
+    "svg.preview.mode": "svg",
+
+    "zig.path": "zig",
+    "zig.zls.path": "c:\\Users\\admin\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zls_install\\zls.exe",
+    "zig.initialSetupDone": true,
+
+    "php.validate.executablePath": "D:\\app\\php74\\php.exe",
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "biome.enabled": false,
 
     // "less.compile": {
     //     "compress": false, // 是否压缩

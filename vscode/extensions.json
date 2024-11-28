@@ -1,17 +1,53 @@
 [
   {
-    "name": "Web developer",
+    "name": "Base developer",
     "includes": [
       {"ms-ceintl.vscode-language-pack-zh-hans": "Chinese(Simplified)"},
-      {"dbaeumer.vscode-eslint": "ESLint"},
+      {"mikestead.dotenv": "DotENV"},
+      {"tamasfe.even-better-toml": "Even Better TOML"},
+      {"pkief.material-icon-theme": "Material Icon Theme"},
+      {"yzhang.markdown-all-in-one": "Markdown All in One"},
+      {"formulahendry.code-runner": "Code Runner"},
+      {"CodeInChinese.EnglishChineseDictionary": "翻译(英汉词典)", "optional": true},
+      {"EditorConfig.EditorConfig": "EditorConfig for VS Code", "optional": true},
+      {"shd101wyy.markdown-preview-enhanced": "Markdown Preview Enhanced", "optional": true},
+      {"bierner.markdown-mermaid": "Markdown Preview Mermaid Support", "optional": true}
+    ]
+  },
+  {
+    "name": "Web developer",
+    "includes": [
+      {"mgmcdermott.vscode-language-babel":"Babel JavaScript"},
       {"ecmel.vscode-html-css": "HTML CSS Support"},
       {"xabikos.javascriptsnippets": "JavaScript(ES6) code snippets"},
-      {"pkief.material-icon-theme": "Material Icon Theme"},
-      {"esbenp.prettier-vscode": "Prettier - Code formatter"},
       {"hollowtree.vue-snippets": "Vue 3 Snippets"},
-      {"vue.volar": "Vue Language Features(Volar)"},
+      {"vue.volar": "Vue - Official"},
+      {"esbenp.prettier-vscode": "Prettier - Code formatter"},
+      {"dbaeumer.vscode-eslint": "ESLint"},
+      {"csstools.postcss": "PostCSS Language Support", "optional": true},
+      {"mrmlnc.vscode-scss": "SCSS IntelliSense", "optional": true},
+      {"stylelint.vscode-stylelint": "Stylelint", "optional": true},
+      {"webben.browserslist": "browserslist", "optional": true},
+      {"naumovs.color-highlight": "Color Highlight", "optional": true},
+      {"anseki.vscode-color": "Color Picker", "optional": true},
+      {"biomejs.biome": "Biome", "optional": true},
       {"ritwickdey.liveserver": "Live Server", "optional": true},
-      {"ms-vscode.live-server": "Live Preview", "optional": true}
+      {"ms-vscode.live-server": "Live Preview", "optional": true},
+      {"octref.vetur": "Vetur", "optional": true}
+    ]
+  },
+  {
+    "name": "Angular developer",
+    "includes": [
+      {"Angular.ng-template":"Angular Language Service"},
+      {"johnpapa.Angular2":"Angular Snippets (Version 18)"}
+    ]
+  },
+  {
+    "name": "React developer",
+    "includes": [
+      {"xabikos.ReactSnippets":"Reactjs code snippets"},
+      {"msjsdiag.vscode-react-native":"React Native Tools"}
     ]
   },
   {
@@ -23,8 +59,9 @@
   {
     "name": "C/C++ developer",
     "includes": [
-      {"ms-vscode.cpptools-extension-pack": "C/C++ Extension Pack"},
-      {"ms-vscode.cmake-tools": "CMake Tools"},
+      {"ms-vscode.cpptools-extension-pack": "C/C++ Extension Pack", "includes":["ms-vscode.cpptools"]},
+      {"ms-vscode.cpptools-themes": "C/C++ Themes"},
+      {"ms-vscode.cmake-tools": "CMake Tools", "includes":["twxs.cmake"]},
       {"llvm-vs-code-extensions.vscode-clangd": "clangd"},
       {"ms-vscode.makefile-tools": "Makefile Tools"},
       {"tboox.xmake-vscode": "XMake"}
@@ -33,13 +70,65 @@
   {
     "name": "Python developer",
     "includes":[
-       {"ms-python.python": "Python"}
+       {"ms-python.python": "Python"},
+       {"ms-python.black-formatter": "Black Formatter"},
+       {"donjayamanne.python-environment-manager": "Python Environment Manager"},
+       {"charliermarsh.ruff": "Ruff"},
+       {"": ""},
+       {"": ""}
+    ]
+  },
+  {
+    "name": "Zig developer",
+    "includes":[
+       {"ziglang.vscode-zig": "Zig Language"}
+    ]
+  },
+  {
+    "name": "Rust developer",
+    "includes":[
+       {"rust-lang.rust-analyzer": "rust-analyzer"}
     ]
   },
   {
     "name": "Java developer",
     "includes":[
-       {"vscjava.vscode-java-pack": "Extension Pack for Java"}
+       {"vscjava.vscode-java-pack": "Extension Pack for Java"},
+       {"vmware.vscode-boot-dev-pack": "Spring Boot Extension Pack"}
+    ]
+  },
+  {
+    "name": "PHP developer",
+    "includes":[
+      {"xdebug.php-pack": "PHP Extension Pack", "includes":["xdebug.php-debug", "zobo.php-intellisense"]},
+      {"neilbrayfield.php-docblocker": "PHP DocBlocker"},
+      {"bmewburn.vscode-intelephense-client": "PHP Intelephense"},
+      {"DEVSENSE.composer-php-vscode": "Composer"}
+    ]
+  },
+  {
+    "name": "Remote Developer",
+    "includes":[
+      {"ms-vscode-remote.remote-ssh": "Remote - SSH"},
+      {"ms-vscode-remote.vscode-remote-extensionpack": "Remote Development"},
+
+      {"ms-vscode-remote.remote-ssh-edit":"Remote - SSH: Editing Configuration Files"},
+      {"ms-vscode.remote-explorer":"Remote Explorer"},
+      {"ms-vscode.remote-server":"Remote - Tunnels"},
+      {"ms-vscode-remote.remote-wsl":"WSL"}
+    ]
+  },
+  {
+    "name": "Other",
+    "includes":[
+      {"ms-azuretools.vscode-docker":"Docker"},
+      {"ms-vscode-remote.remote-containers":"Dev Containers"},
+      {"Chouzz.vscode-innosetup": "Inno Setup"},
+      {"Spades.vs-picgo": "PicGo"},
+      {"rohinivsenthil.postcode": "Postcode"},
+      {"mechatroner.rainbow-csv": "Rainbow CSV"},
+      {"jock.svg": "SVG"},
+      {"Gruntfuggly.todo-tree": "Todo Tree"}
     ]
   }
 ]
