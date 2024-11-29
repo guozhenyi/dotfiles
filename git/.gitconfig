@@ -34,12 +34,19 @@
     # remove a file from index
     unadd = reset HEAD
     last = log -1
-    logf = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    logf = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'
     log1 = log --pretty=oneline --abbrev-commit --graph --decorate
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
 [gui]
     encoding = utf-8
 [i18n]
     filesEncoding = utf-8
+
 [diff]
     tool = vimdiff
     algorithm = patience
@@ -48,9 +55,6 @@
 [merge]
     tool = vimdiff
     conflictstyle = diff3
-[mergetool "vim-merge3way"]
-    cmd = "vim -c \"call mergeutil#threeway()\" \"$BASE\" \"$REMOTE\" \"$LOCAL\" \"$MERGED\""
-    trustExitCode = true
 [filter "lfs"]
     clean = git lfs clean %f
     smudge = git lfs smudge %f
