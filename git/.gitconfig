@@ -46,19 +46,12 @@
     encoding = utf-8
 [i18n]
     filesEncoding = utf-8
-
-[diff]
-    tool = vimdiff
-    algorithm = patience
-    mnemonicPrefix = true
-    compactionHeuristic = true
-[merge]
-    tool = vimdiff
-    conflictstyle = diff3
 [filter "lfs"]
     clean = git lfs clean %f
     smudge = git lfs smudge %f
     required = true
+[safe]
+	directory = *
 
 
 # ━━━━━━神兽出没━━━━━━
