@@ -1,0 +1,151 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
+    // "editor.tabSize": 2,
+    // 控制显示悬停提示前的等待时间 (毫秒)。
+    "editor.hover.delay": 2000,
+    // 呈现空格字符(字词之间的单个空格除外)
+    "editor.renderWhitespace": "boundary",
+    // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
+    "editor.rulers": [ 80, 120 ],
+    // 在编辑器中关闭内联提示。
+    "editor.inlayHints.enabled": "off",
+    // 粘滞滚动
+    "editor.stickyScroll.enabled": false,
+
+    // 控制资源管理器是否应以紧凑形式呈现文件夹。
+    "explorer.compactFolders": false,
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": true,
+
+    // 启用后，将在保存文件时删除文件末尾的空格。
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+
+    "update.mode": "manual",
+    "update.enableWindowsBackgroundUpdates": false,
+
+    // 关闭遥测
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    // "workbench.colorTheme": "Default Dark+",
+    "window.newWindowDimensions": "inherit",
+    "window.commandCenter": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // 在保存时运行代码检查
+    "eslint.run": "onSave",
+    "eslint.packageManager": "yarn",
+    "eslint.codeActionsOnSave.mode": "problems",
+
+    // （设置这些属性，以和Perttier尽量保持格式兼容）
+    // 每行最大字符数(0 = 禁用)。
+    // "html.format.wrapLineLength": 130,
+    "html.format.indentInnerHtml": false,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.extraLiners": "",
+
+    // "less.lint.important": "warning",
+    "prettier.bracketSameLine": true,
+    "prettier.printWidth": 130,
+    //   "prettier.singleQuote": true,
+    "vue.inlayHints.optionsWrapper": false,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "files.insertFinalNewline": false,
+        "files.trimTrailingWhitespace": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    // 指定 vue 文件的格式化工具
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    // 配置要为 [python] 语言替代的设置。
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[go]": {
+        // "editor.insertSpaces": false,
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
+
+    "code-runner.runInTerminal": true,
+    "settingsSync.ignoredSettings": [
+        "-git.path",
+        "-php.validate.executablePath"
+    ],
+
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
+    "svelte.plugin.svelte.note-new-transformation": false,
+
+    "java.home": "C:\\Java\\jdk1.8.0_112",
+    "java.jdt.ls.java.home": "c:\\Java\\jdk1.8.0_112",
+    "java.requirements.JDK11Warning": false,
+    "java.configuration.detectJdksAtStart": false,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:\\Java\\jdk1.8.0_112",
+            "default": true
+        }
+    ],
+
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+
+    "svg.preview.mode": "svg",
+    "biome.enabled": false,
+
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        },
+        // {
+        // 	"format": "compressed",
+        // 	"extensionName": ".min.css",
+        // 	"savePath": null,
+        // 	"savePathReplacementPairs": null
+        // }
+    ],
+}
