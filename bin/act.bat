@@ -25,10 +25,10 @@ if exist "%dir%\.venv\Scripts\activate.bat" (
 if "%dir%"=="%root%" (
     choice /m "Create a new virtual environment"
     if errorlevel 2 goto :eof
-    cd /d %start_dir%
+    cd /d "%start_dir%"
     python -m venv .venv
     if exist ".venv\Scripts\activate.bat" (
-        echo Venv created: %start_dir%\.venv
+        echo Venv created: "%start_dir%\.venv"
         call ".venv\Scripts\activate.bat"
     ) else (
         echo Failed to create virtual environment. Please check if Python is installed.
