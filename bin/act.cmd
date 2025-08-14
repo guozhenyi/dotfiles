@@ -4,15 +4,15 @@ REM chcp 65001 >nul
 
 REM 记录脚本启动时的当前目录（起始目录）
 REM Record the current directory (starting directory)
-set "start_dir=%cd%"
+SET "start_dir=%cd%"
 
 REM 取当前盘符根目录（如 D:\）
 REM Get the root directory of the current driver（如 D:\）
-set "root=%cd:~0,3%"
+SET "root=%cd:~0,3%"
 
 REM 从当前目录开始查找
 REM Search starting from the current directory
-set "dir=%cd%"
+SET "dir=%cd%"
 
 :search
 if exist "%dir%\.venv\Scripts\activate.bat" (
@@ -43,5 +43,5 @@ if "%dir%"=="%root%" (
 REM 继续向上一级目录
 REM Continue to the parent directory
 cd /d "%dir%\.."
-set "dir=%cd%"
+SET "dir=%cd%"
 goto search
