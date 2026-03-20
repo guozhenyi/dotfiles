@@ -1,41 +1,41 @@
 [user]
-    name = gzy
-    email = gzyonline@hotmail.com
+	name = gzy
+	email = gzyonline@hotmail.com
 [core]
-    autocrlf = false
-    safecrlf = true
-    filemode = false
-    quotepath = false
-    excludesfile = ~/.gitignore
+	autocrlf = false
+	safecrlf = true
+	filemode = false
+	quotepath = false
+	excludesfile = ~/.gitignore
 [init]
 	defaultBranch = main
 [color]
-    ui = auto
+	ui = auto
 [push]
-    default = current
+	default = current
 [alias]
-    s = status
-    st = status
-    df = diff
-    mg = merge --no-ff
-    mgf = merge --ff
-    mgs = merge --squash
-    rb = rebase
-    ck = checkout
-    co = checkout
-    cko = checkout --orphan
-    cm = commit
-    br = branch
-    pl = pull
-    plr = pull --rebase
-    ps = push
-    rmbr = fetch -p
-    unstage = reset HEAD
-    # remove a file from index
-    unadd = reset HEAD
-    last = log -1
-    logf = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'
-    log1 = log --pretty=oneline --abbrev-commit --graph --decorate
+	s = status
+	st = status
+	df = diff
+	mg = merge --no-ff
+	mgf = merge --ff
+	mgs = merge --squash
+	rb = rebase
+	ck = checkout
+	co = checkout
+	cko = checkout --orphan
+	cm = commit
+	br = branch
+	pl = pull
+	plr = pull --rebase
+	ps = push
+	rmbr = fetch -p
+	unstage = reset HEAD
+	# remove a file from index
+	unadd = reset HEAD
+	last = log -1
+	logf = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'
+	log1 = log --pretty=oneline --abbrev-commit --graph --decorate
 [pull]
 	rebase = false
 [fetch]
@@ -43,13 +43,15 @@
 [rebase]
 	autoStash = false
 [gui]
-    encoding = utf-8
+	encoding = utf-8
 [i18n]
-    filesEncoding = utf-8
+	commitencoding = utf-8
+	filesEncoding = utf-8
+	logoutputencoding = utf-8
 [filter "lfs"]
-    clean = git lfs clean %f
-    smudge = git lfs smudge %f
-    required = true
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
 [credential]
 	helper = wincred
 [safe]
