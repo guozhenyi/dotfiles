@@ -54,8 +54,13 @@
 	required = true
 [credential]
 	helper = wincred
+[advice]
+	updateSinceLastFetch = false
 [safe]
 	directory = *
+[http "https://github.com"]
+	#proxy = socks5://127.0.0.1:10808
+	proxy = http://127.0.0.1:7899
 
 
 # ━━━━━━神兽出没━━━━━━
