@@ -32,7 +32,7 @@
     },
   },
   "hover_popover_delay": 2000,
-  "icon_theme": "Zed (Default)",
+  "icon_theme": "Material Icon Theme",
   "minimap": {
     "show": "auto",
   },
