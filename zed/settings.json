@@ -33,6 +33,9 @@
   },
   "hover_popover_delay": 2000,
   "icon_theme": "Zed (Default)",
+  "minimap": {
+    "show": "auto",
+  },
 
   "project_panel": {
     "auto_fold_dirs": false,
