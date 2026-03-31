@@ -8,6 +8,8 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "auto_update": false,
+  "auto_indent": "none",
+  "auto_indent_on_paste": false,
   "base_keymap": "VSCode",
   "buffer_font_fallbacks": [
     "JetBrains Mono",
@@ -49,6 +51,7 @@
     "enabled": false,
   },
   "show_whitespaces": "boundary",
+  "soft_wrap": "editor_width",
 
   "tab_size": 2,
   "terminal": {
