@@ -10,14 +10,15 @@
   "auto_update": false,
   "base_keymap": "VSCode",
   "buffer_font_fallbacks": [
-    "IBM Plex Mono",
     "JetBrains Mono",
+    "IBM Plex Mono",
+    "Source Code Pro",
     "Consolas",
     "monospace",
     "Microsoft YaHei",
     "sans-serif",
   ],
-  "buffer_font_family": "Source Code Pro",
+  "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 15,
 
   "collaboration_panel": {
