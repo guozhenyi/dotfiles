@@ -17,11 +17,11 @@
   {
     "name": "Web developer",
     "includes": [
+      {"vue.volar": "Vue (Official)"},
       {"mgmcdermott.vscode-language-babel":"Babel JavaScript"},
       {"ecmel.vscode-html-css": "HTML CSS Support"},
       {"xabikos.javascriptsnippets": "JavaScript(ES6) code snippets"},
       {"hollowtree.vue-snippets": "Vue 3 Snippets"},
-      {"vue.volar": "Vue - Official"},
       {"esbenp.prettier-vscode": "Prettier - Code formatter"},
       {"dbaeumer.vscode-eslint": "ESLint"},
       {"csstools.postcss": "PostCSS Language Support", "optional": true},
@@ -70,31 +70,31 @@
   {
     "name": "Python developer",
     "includes":[
-       {"ms-python.python": "Python"},
-       {"ms-python.black-formatter": "Black Formatter"},
-       {"donjayamanne.python-environment-manager": "Python Environment Manager"},
-       {"charliermarsh.ruff": "Ruff"},
-       {"": ""},
-       {"": ""}
+      {"ms-python.python": "Python"},
+      {"ms-python.black-formatter": "Black Formatter"},
+      {"donjayamanne.python-environment-manager": "Python Environment Manager"},
+      {"charliermarsh.ruff": "Ruff"},
+      {"": ""},
+      {"": ""}
     ]
   },
   {
     "name": "Zig developer",
     "includes":[
-       {"ziglang.vscode-zig": "Zig Language"}
+      {"ziglang.vscode-zig": "Zig Language"}
     ]
   },
   {
     "name": "Rust developer",
     "includes":[
-       {"rust-lang.rust-analyzer": "rust-analyzer"}
+      {"rust-lang.rust-analyzer": "rust-analyzer"}
     ]
   },
   {
     "name": "Java developer",
     "includes":[
-       {"vscjava.vscode-java-pack": "Extension Pack for Java"},
-       {"vmware.vscode-boot-dev-pack": "Spring Boot Extension Pack"}
+      {"vscjava.vscode-java-pack": "Extension Pack for Java"},
+      {"vmware.vscode-boot-dev-pack": "Spring Boot Extension Pack"}
     ]
   },
   {

@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 16,
-    "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace, 'Microsoft YaHei'",
+    "editor.fontFamily": "'JetBrains Mono', 'IBM Plex Mono', 'Source Code Pro', Consolas, monospace, 'Microsoft YaHei', sans-serif",
     "editor.tabSize": 2,
     // 控制显示悬停提示前的等待时间 (毫秒)。
     "editor.hover.delay": 2000,
@@ -12,14 +12,21 @@
     "editor.inlayHints.enabled": "off",
     // 粘滞滚动
     "editor.stickyScroll.enabled": false,
+
+    // 控制资源管理器是否应在打开文件时自动显示并选择文件。
+    "explorer.autoReveal": "focusNoScroll",
     // 控制资源管理器是否应以紧凑形式呈现文件夹。
     "explorer.compactFolders": false,
+    // 控制是否已在资源管理器中启用文件嵌套。
+    "explorer.fileNesting.enabled": false,
 
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": true,
+    "extensions.ignoreRecommendations": true,
 
     // 启用后，将在保存文件时删除文件末尾的空格。
     "files.trimTrailingWhitespace": true,
+    // "files.insertFinalNewline": true,
     "files.eol": "\n",
 
     "update.mode": "manual",
@@ -30,22 +37,17 @@
     // "telemetry.enableTelemetry": false,
     // "telemetry.enableCrashReporter": false,
 
-    "workbench.startupEditor": "newUntitledFile",
+    // "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "Default Dark+",
 
-    "window.newWindowDimensions": "inherit",
     "window.commandCenter": false,
+    "window.newWindowDimensions": "inherit",
 
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
     "security.workspace.trust.untrustedFiles": "open",
-
-    // 在保存时运行代码检查
-    "eslint.run": "onSave",
-    "eslint.packageManager": "yarn",
-    "eslint.codeActionsOnSave.mode": "problems",
 
     // （设置这些属性，以和Perttier尽量保持格式兼容）
     // 每行最大字符数(0 = 禁用)。
@@ -53,34 +55,36 @@
     "html.format.indentInnerHtml": false,
     "html.format.wrapAttributes": "preserve",
     "html.format.extraLiners": "",
+    "html.format.templating": true,
 
-    // "less.lint.important": "warning",
-    "prettier.printWidth": 130,
-    "prettier.singleQuote": true,
-
-    "vue.inlayHints.optionsWrapper": false,
-
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[markdown]": {
-        "files.insertFinalNewline": false,
-        "files.trimTrailingWhitespace": false
+        // "files.insertFinalNewline": false,
+        "files.trimTrailingWhitespace": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // 指定 vue 文件的格式化工具
@@ -93,30 +97,65 @@
     "[python]":  {
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
-        "editor.autoIndent": "advanced"
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
 
-    "[go]":  {
+    "[go]": {
         // "editor.insertSpaces": false,
         "editor.formatOnSave": false,
         "editor.codeActionsOnSave": {
-          "source.organizeImports": "never"
-      }
+            "source.organizeImports": "never"
+        }
     },
 
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        },
+        // {
+        // 	"format": "compressed",
+        // 	"extensionName": ".min.css",
+        // 	"savePath": null,
+        // 	"savePathReplacementPairs": null
+        // }
+    ],
+
     "code-runner.runInTerminal": true,
+    "svg.preview.mode": "svg",
+
+    "prettier.printWidth": 130,
+    "prettier.bracketSameLine": true,
+    // "prettier.semi": false,
+    // "prettier.singleQuote": true,
+    // "prettier.tabWidth": 4,
+
+    "vue.inlayHints.optionsWrapper": false,
+
+   // 在保存时运行代码检查
+    "eslint.run": "onSave",
+    "eslint.codeActionsOnSave.mode": "problems",
+
+    "oxc.enable": true,
+
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
+
+    "svelte.plugin.svelte.note-new-transformation": false,
 
     "settingsSync.ignoredSettings": [
         "-git.path",
         "-php.validate.executablePath"
     ],
 
-    "volar.inlayHints.eventArgumentInInlineHandlers": false,
 
-    "svelte.plugin.svelte.note-new-transformation": false,
-
+    // Java 配置 -----------------------------------------------
     "java.home": "C:\\Java\\jdk1.8.0_112",
-    "java.jdt.ls.java.home": "c:\\Java\\jdk1.8.0_112",
+    "java.jdt.ls.java.home": "C:\\Java\\jdk1.8.0_112",
     "java.configuration.detectJdksAtStart": false,
     "java.configuration.runtimes": [
         {
@@ -126,20 +165,22 @@
         }
     ],
     "java.requirements.JDK11Warning": false,
+    // End Java 配置 -------------------------------------------
+
 
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
 
-    "svg.preview.mode": "svg",
 
     "zig.path": "zig",
     "zig.zls.path": "c:\\Users\\admin\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zls_install\\zls.exe",
     "zig.initialSetupDone": true,
 
+
     "php.validate.executablePath": "D:\\app\\php74\\php.exe",
 
-    "diffEditor.ignoreTrimWhitespace": false,
-    "biome.enabled": false,
+
+    // "diffEditor.ignoreTrimWhitespace": false,
 
     // "less.compile": {
     //     "compress": false, // 是否压缩
