@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "sisyphus": {
+      "model": "alibaba-coding-plan-cn/glm-5", "variant": "max"
+    },
+    "prometheus": {
+      "model": "alibaba-coding-plan-cn/glm-5", "variant": "max"
+    },
+    "atlas": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    },
+    "hephaestus": {
+      "model": "alibaba-coding-plan-cn/glm-5", "variant": "medium"
+    },
+    "oracle": {
+      "model": "alibaba-coding-plan-cn/qwen3.5-plus", "variant": "high"
+    },
+    "librarian": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    },
+    "explore": {
+      "model": "alibaba-coding-plan-cn/MiniMax-M2.5"
+    },
+    "multimodal-looker": {
+      "model": "alibaba-coding-plan-cn/kimi-k2.5"
+    },
+    "metis": {
+      "model": "alibaba-coding-plan-cn/glm-5", "variant": "max"
+    },
+    "momus": {
+      "model": "alibaba-coding-plan-cn/MiniMax-M2.5", "variant": "medium"
+    },
+    "sisyphus-junior": {
+      "model": "alibaba-coding-plan-cn/glm-5", "variant": "max"
+    },
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "alibaba-coding-plan-cn/kimi-k2.5", "variant": "high"
+    },
+    "ultrabrain": {
+      "model": "alibaba-coding-plan-cn/qwen3.5-plus", "variant": "xhigh"
+    },
+    "deep": {
+      "model": "alibaba-coding-plan-cn/qwen3.5-plus", "variant": "medium"
+    },
+    "artistry": {
+      "model": "alibaba-coding-plan-cn/kimi-k2.5", "variant": "high"
+    },
+    "quick": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    },
+    "unspecified-low": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    },
+    "unspecified-high": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    },
+    "writing": {
+      "model": "alibaba-coding-plan-cn/glm-5"
+    }
+  }
+}
