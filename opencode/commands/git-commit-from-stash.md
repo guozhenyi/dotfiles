@@ -4,4 +4,4 @@ agent: build
 model: alibaba-coding-plan-cn/glm-4.7
 ---
 
-把已加入暂存区的修改文件，给它们生成合适的中文 commit message，并提交到 git。
+我已把修改文件加入暂存区，给它们生成合适的中文 commit msg，并提交到 git。
