@@ -4,9 +4,10 @@ agent: build
 #model: opencode/deepseek-v4-flash-free
 ---
 
-已暂存的文件变更如下：
-!`git diff --cached --stat`
-!`git diff --cached`
+查看已暂存的文件变更，参考如下命令：
+git status --short
+git diff --cached --stat
+git diff --cached
 
 请根据上述变更，选择合适的前缀并生成中文 commit message，然后直接执行 git commit。
 

@@ -4,11 +4,11 @@ agent: plan
 #model: opencode/deepseek-v4-flash-free
 ---
 
-请审查以下暂存区中的代码变更：
-!`git diff --cached --stat`
-!`git diff --cached`
+查看已暂存的文件变更，参考如下命令：
+git diff --cached --stat
+git diff --cached
 
-请进行代码审查，重点关注：
+请审查暂存区中的代码变更，重点关注：
 1. 潜在的 bug 或逻辑错误
 2. 性能问题
 3. 安全漏洞
