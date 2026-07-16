@@ -1,15 +1,5 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "auto_update": false,
-  "auto_indent": "none",
-  "auto_indent_on_paste": false,
   "base_keymap": "VSCode",
   "buffer_font_fallbacks": [
     "JetBrains Mono",
@@ -18,13 +8,16 @@
     "Consolas",
     "monospace",
     "Microsoft YaHei",
-    "sans-serif",
+    "sans-serif"
   ],
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 15,
+  "line_ending": "prefer_lf",
+  "ui_font_size": 16,
 
   "collaboration_panel": {
-    "button": false,
+    "dock": "left",
+    "button": false
   },
   "disable_ai": true,
   "ensure_final_newline_on_save": false,
@@ -32,45 +25,46 @@
 
   "git": {
     "inline_blame": {
-      "enabled": false,
-    },
+      "enabled": false
+    }
   },
   "hover_popover_delay": 2000,
   "icon_theme": "Material Icon Theme",
   "minimap": {
-    "show": "auto",
+    "show": "auto"
   },
 
   "project_panel": {
-    "auto_fold_dirs": false,
+    "dock": "left",
+    "auto_fold_dirs": false
   },
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "sticky_scroll": {
-    "enabled": false,
+    "enabled": false
   },
   "show_whitespaces": "boundary",
   "soft_wrap": "editor_width",
 
   "tab_size": 2,
   "terminal": {
-    "font_size": 14.0,
+    "font_size": 14.0
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
+    "anthropic_retention": false
   },
   "title_bar": {
     "show_menus": false,
-    "show_sign_in": false,
+    "show_sign_in": false
   },
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark",
+    "dark": "One Dark"
   },
-  "ui_font_size": 16,
 
-  "wrap_guides": [80, 120],
+  "wrap_guides": [80, 120]
 }
