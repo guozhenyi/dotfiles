@@ -1,7 +1,7 @@
 {
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.fontFamily": "'JetBrains Mono', 'IBM Plex Mono', 'Source Code Pro', Consolas, monospace, 'Microsoft YaHei', sans-serif",
-    "editor.tabSize": 2,
+    // "editor.tabSize": 2,
     // 控制显示悬停提示前的等待时间 (毫秒)。
     "editor.hover.delay": 2000,
     // 呈现空格字符(字词之间的单个空格除外)
@@ -25,29 +25,41 @@
     "extensions.ignoreRecommendations": true,
 
     // 启用后，将在保存文件时删除文件末尾的空格。
-    "files.trimTrailingWhitespace": true,
-    // "files.insertFinalNewline": true,
     "files.eol": "\n",
+    // "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
 
     "update.mode": "manual",
     "update.enableWindowsBackgroundUpdates": false,
 
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "window.commandCenter": false,
+    "window.newWindowDimensions": "inherit",
+
     // 关闭遥测
     "telemetry.telemetryLevel": "off",
-    // "telemetry.enableTelemetry": false,
-    // "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.feedback.enabled": false,
+    "telemetry.editStats.details.enabled": false,
+    "telemetry.editStats.enabled": false,
+    "telemetry.editStats.showDecorations": false,
+    "telemetry.editStats.showStatusBar": false,
 
-    // "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.layoutControl.enabled": false,
-
-    "window.commandCenter": false,
-    "window.newWindowDimensions": "inherit",
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
 
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
     "security.workspace.trust.untrustedFiles": "open",
+
+    // "diffEditor.ignoreTrimWhitespace": false,
 
     // （设置这些属性，以和Perttier尽量保持格式兼容）
     // 每行最大字符数(0 = 禁用)。
@@ -58,19 +70,19 @@
     "html.format.templating": true,
 
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "oxc.oxc-vscode"
     },
     "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[markdown]": {
         // "files.insertFinalNewline": false,
@@ -78,23 +90,23 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // 指定 vue 文件的格式化工具
     "[vue]": {
         "editor.tabSize": 2,
-        "editor.defaultFormatter": "Vue.volar"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // 配置要为 [python] 语言替代的设置。
-    "[python]":  {
+    "[python]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.autoIndent": "advanced",
@@ -129,15 +141,16 @@
     "code-runner.runInTerminal": true,
     "svg.preview.mode": "svg",
 
-    "prettier.printWidth": 130,
-    "prettier.bracketSameLine": true,
-    // "prettier.semi": false,
-    // "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    // "prettier.trailingComma": "none",
+    // "prettier.bracketSameLine": true,
     // "prettier.tabWidth": 4,
 
     "vue.inlayHints.optionsWrapper": false,
 
-   // 在保存时运行代码检查
+    // 在保存时运行代码检查
     "eslint.run": "onSave",
     "eslint.codeActionsOnSave.mode": "problems",
 
@@ -150,52 +163,6 @@
     "settingsSync.ignoredSettings": [
         "-git.path",
         "-php.validate.executablePath"
-    ],
-
-
-    // Java 配置 -----------------------------------------------
-    "java.home": "C:\\Java\\jdk1.8.0_112",
-    "java.jdt.ls.java.home": "C:\\Java\\jdk1.8.0_112",
-    "java.configuration.detectJdksAtStart": false,
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-1.8",
-            "path": "C:\\Java\\jdk1.8.0_112",
-            "default": true
-        }
-    ],
-    "java.requirements.JDK11Warning": false,
-    // End Java 配置 -------------------------------------------
-
-
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
-    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
-
-
-    "zig.path": "zig",
-    "zig.zls.path": "c:\\Users\\admin\\AppData\\Roaming\\Code\\User\\globalStorage\\ziglang.vscode-zig\\zls_install\\zls.exe",
-    "zig.initialSetupDone": true,
-
-
-    "php.validate.executablePath": "D:\\app\\php74\\php.exe",
-
-
-    // "diffEditor.ignoreTrimWhitespace": false,
-
-    // "less.compile": {
-    //     "compress": false, // 是否压缩
-    //     "sourceMap": false, // 是否生成map文件，有了这个可以在调试台看到less行数
-    //     "main": [
-    //         // "index.less",
-    //         // "panel.less",
-    //     ],
-    //     // "out": true, // 是否输出css文件，false为不输出
-    //     "out": "../css/",
-    //     "outExt": ".css", // 输出文件的后缀,小程序可以写'wxss'
-    //     "autoprefixer": "> 1%, last 2 versions, not dead",
-    //     // "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9", // 自动加前缀
-    // },
-
-
+    ]
 
 }
