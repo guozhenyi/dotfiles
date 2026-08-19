@@ -9,6 +9,10 @@ In repositories indexed by CodeGraph (a `.codegraph/` directory exists at the re
 If there is no `.codegraph/` directory, skip CodeGraph entirely — indexing is the user's decision.
 <!-- CODEGRAPH_END -->
 
+## 浏览器自动化 (Playwright CLI)
+
+调用 `playwright-cli` 操作浏览器时，**默认加 `--headed`**（`playwright-cli open --headed <url>` 等），带浏览器窗口便于人机协同观察操作过程。除非任务明确要求无窗口（如纯后台脚本），不要默认 headless。
+
 ## GitHub 访问代理
 
 当无法访问 GitHub 时，按以下顺序检查代理：
