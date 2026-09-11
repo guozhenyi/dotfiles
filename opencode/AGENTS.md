@@ -13,6 +13,15 @@ If there is no `.codegraph/` directory, skip CodeGraph entirely — indexing is 
 
 调用 `playwright-cli` 操作浏览器时，**默认加 `--headed`**（`playwright-cli open --headed <url>` 等），带浏览器窗口便于人机协同观察操作过程。除非任务明确要求无窗口（如纯后台脚本），不要默认 headless。
 
+## 全局代码与文件规范
+
+### Python 格式化规范
+- **格式化工具**：所有 Python 代码必须统一使用全局安装的 `ruff` 进行格式化。
+- **环境自检与安装**：在执行格式化操作前，AI 必须先检查系统是否已全局安装 `ruff`。如果未安装，需主动执行 `pip install ruff` 进行全局安装，确保工具可用后再继续后续任务。
+
+### 文件编辑规范
+- **保留原有换行符**：在读取、修改或重写任何文件时，必须严格保留文件原有的换行符格式（如 LF、CRLF 或 CR）。禁止在编辑过程中擅自更改、统一或转换换行符，以确保与项目原有版本控制（如 Git）的换行策略保持一致，避免产生不必要的差异。
+
 ## GitHub 访问代理
 
 当无法访问 GitHub 时，按以下顺序检查代理：
