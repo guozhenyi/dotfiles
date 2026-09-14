@@ -1,3 +1,7 @@
+## Shell 环境 (Windows)
+- **首选**：始终优先使用 PowerShell 7 (`pwsh`) 执行命令。
+- **降级**：若遇到兼容性问题（如旧模块、COM 对象等），可回退到 Windows PowerShell 5.1 (`powershell.exe`)，但必须在输出中说明原因。
+
 <!-- CODEGRAPH_START -->
 ## CodeGraph
 
@@ -11,17 +15,18 @@ If there is no `.codegraph/` directory, skip CodeGraph entirely — indexing is 
 
 ## 浏览器自动化 (Playwright CLI)
 
-调用 `playwright-cli` 操作浏览器时，**默认加 `--headed`**（`playwright-cli open --headed <url>` 等），带浏览器窗口便于人机协同观察操作过程。除非任务明确要求无窗口（如纯后台脚本），不要默认 headless。
+- **默认模式**：调用 `playwright-cli` 时始终加 `--headed`（如 `playwright-cli open --headed <url>`），便于人机协同观察。
+- **例外**：仅当任务明确要求纯后台运行时，才使用 headless 模式。
 
-## 全局代码与文件规范
+## 文件与代码规范
 
-### Python 格式化规范
-- **格式化工具**：所有 Python 代码必须统一使用全局安装的 `ruff` 进行格式化。
-- **环境自检与安装**：在执行格式化操作前，AI 必须先检查系统是否已全局安装 `ruff`。如果未安装，需主动执行 `pip install ruff` 进行全局安装，确保工具可用后再继续后续任务。
+### 换行符规则
+- **已有文件**：严格保留原有换行符格式（LF / CRLF / CR），禁止擅自转换。
+- **新建文件**：统一使用 `LF`。
 
-### 文件编辑规范
-- **已有文件换行符**：在读取、修改或重写已有文件时，必须严格保留文件原有的换行符格式（如 LF、CRLF 或 CR）。禁止擅自更改或转换，以避免产生不必要的版本控制差异。
-- **新建文件换行符**：当需要创建全新的文件时，必须统一使用 `LF` 作为换行符。
+### Python 格式化
+- **工具**：统一使用全局安装的 `ruff`。
+- **自检**：执行前必须先检查 `ruff` 是否可用；若未安装，主动执行 `pip install ruff` 后再继续。
 
 ## GitHub 访问代理
 
